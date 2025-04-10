@@ -134,18 +134,20 @@ See the Proof-of-Concept (PoC) Python Notebook file [here](codes/Redfin_Analytic
 Based on the 28 selected columns for the transformed dataset, the destination table schema was designed using the appropriate data type.
 The data warehouse, destination table, staging area, and Snowpipe were then created using a prepared SQL script. 
 
-See the file [here](codes/redfin_analytics_snowflake_dw_create.sql).
+See the SQL file [here](codes/redfin_analytics_snowflake_dw_create.sql).
 
 ![img7](screenshots/img7.png)
 <br><br>
 
 Verified the table schema:
+
 `DESC TABLE redfin_analytics_database.redfin_analytics_schema.redfin_analytics_table;`
 
 ![img8](screenshots/img8.png)
 <br><br>
 
 Checked the properties of the pipe created:
+
 `DESC PIPE redfin_analytics_database.snowpipe_schema.redfin_analytics_snowpipe;`
 
 ![img9](screenshots/img9.png)
@@ -166,6 +168,7 @@ See the test file [here](test_data/test_stage_pipe.csv).
 <br><br>
 
 Then this was tested by running the following command on the Snowflake SQL Workspace:
+
 `list @redfin_analytics_database.external_stage_schema.redfin_dw_ext_stage;`
 
 ![img12](screenshots/img12.png)
@@ -216,9 +219,9 @@ In preparation for the rest of the project, the S3 bucket was emptied and the Sn
 
 * EC2 role name: `ec2-access-to-s3-role`
   
-•	Details: AWS Service, Use case is EC2
+** Details: AWS Service, Use case is EC2
 
-•	Permissions: `AmazonS3FullAccess`
+** Permissions: `AmazonS3FullAccess`
 
 ![img18](screenshots/img18.png)
 <br><br>
@@ -272,6 +275,7 @@ airflow standalone
 <br><br>
 
 The DAG was written to orchestrate the workflow once every month. 
+
 See the finished DAG file [here](codes/redfin_analytics_etl_dag.py).
 
 ![img19](screenshots/img19.png)
@@ -312,6 +316,7 @@ The state of the S3 buckets and the Snowflake table before triggering the DAG.
 <br><br>
 
 After triggering the DAG:
+
 The first task was a success and it took about 10 minutes to complete.
 
 ![img24](screenshots/img24.png)
