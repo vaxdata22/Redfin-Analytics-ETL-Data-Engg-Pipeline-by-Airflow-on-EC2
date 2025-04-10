@@ -219,9 +219,9 @@ In preparation for the rest of the project, the S3 bucket was emptied and the Sn
 
 * EC2 role name: `ec2-access-to-s3-role`
   
-** Details: AWS Service, Use case is EC2
-
-** Permissions: `AmazonS3FullAccess`
+	* Details: AWS Service, Use case is EC2
+	
+	* Permissions: `AmazonS3FullAccess`
 
 ![img18](screenshots/img18.png)
 <br><br>
