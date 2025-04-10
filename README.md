@@ -52,8 +52,11 @@ Having satisfied all the 8 requirements in the preceding section, I proceeded to
 
 ### STEP 1: Examining the source data and preliminary coding:
 The source data is a real estate data obtained from https://www.redfin.com/news/data-center/.
+
 The particular dataset of interest is the US Housing Market data by `City`, obtained from the following link: 
+
 https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/city_market_tracker.tsv000.gz
+
 The data is in a compressed format (GZ).
 
 The first part of the development process was done in an online Python Notebook environment (Google Colab, colab.google) in order to examine the source data to see the fields and records. 
