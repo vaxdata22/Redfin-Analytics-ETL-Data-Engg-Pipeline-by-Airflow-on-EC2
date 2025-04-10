@@ -281,14 +281,14 @@ See the finished DAG file [here](codes/redfin_analytics_etl_dag.py).
 ![img19](screenshots/img19.png)
 <br><br>
 	
-This orchestration made use of a necessary AWS Airflow connection which was added via the Airflow GUI:
+#### This orchestration made use of a necessary AWS Airflow connection which was added via the Airflow GUI:
 * Connection ID: `aws_new_conn`
 
-* Connection Type: Amazon Web Services
+* Connection Type: `Amazon Web Services`
 
-* AWS Access Key: <<THE IAM USER ACCESS KEY>>
+* AWS Access Key: <<`THE IAM USER ACCESS KEY`>>
 
-* AWS Secret Access Key: <<THE IAM USER SECRET ACCESS KEY>>
+* AWS Secret Access Key: <<`THE IAM USER SECRET ACCESS KEY`>>
 
 * Extra:
         ```
@@ -315,7 +315,7 @@ The state of the S3 buckets and the Snowflake table before triggering the DAG.
 ![img23](screenshots/img23.png)
 <br><br>
 
-After triggering the DAG:
+#### After triggering the DAG:
 
 The first task was a success and it took about 10 minutes to complete.
 
@@ -368,9 +368,9 @@ This confirms that the entire orchestration was indeed successful.
 
 * Warehouse: `redfin_analytics_warehouse`
 
-* Username: <<MY SNOWFLAKE ACCOUNT USERNAME>>
+* Username: <<`MY SNOWFLAKE ACCOUNT USERNAME`>>
 
-* Password: <<MY SNOWFLAKE ACCOUNT PASSWORD>>
+* Password: <<`MY SNOWFLAKE ACCOUNT PASSWORD`>>
   
 ![img36](screenshots/img36.png)
 <br><br>
@@ -383,7 +383,7 @@ Loaded the data via `DirectQuery`.
 ![img38](screenshots/img38.png)
 <br><br>
 
-The visualization dashboard.
+#### The visualization dashboard.
 
 ![img39](screenshots/img39.png)
 <br><br>
